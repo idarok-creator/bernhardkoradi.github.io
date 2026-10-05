@@ -1211,3 +1211,111 @@ button {
     padding-top: 90px;
   }
 }
+
+/* ------------------------------------------------------------
+   ABOUT PAGE
+   ------------------------------------------------------------ */
+.about-page-header {
+  padding-bottom: 32px;
+}
+
+.about-page-header .about-roles {
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  margin-top: 8px;
+}
+
+.about-body {
+  padding: 0 var(--margin) 64px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.about-prose p {
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--text-secondary);
+  margin-bottom: 1.4em;
+}
+
+.about-prose p:last-child {
+  margin-bottom: 0;
+  color: var(--text);
+  font-family: var(--font-display);
+  font-size: 20px;
+  letter-spacing: 0.02em;
+}
+
+.about-practices {
+  padding: 48px var(--margin) 80px;
+  border-top: 1px solid var(--border);
+}
+
+.about-practice-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-practice {
+  display: block;
+  transition: opacity 0.2s ease;
+}
+
+.about-practice:hover {
+  opacity: 0.7;
+}
+
+.about-practice .brand-mark {
+  margin-bottom: 10px;
+}
+
+.about-practice h2 {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+
+.about-practice p:last-child {
+  font-size: 13px;
+  color: var(--text-secondary);
+  letter-spacing: 0.03em;
+}
+
+.about-contact {
+  padding: 0 var(--margin) 100px;
+  text-align: center;
+}
+
+.about-email {
+  display: inline-block;
+  font-size: 15px;
+  letter-spacing: 0.04em;
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 2px;
+  margin-top: 8px;
+  transition: border-color 0.2s ease;
+}
+
+.about-email:hover {
+  border-color: var(--text);
+}
+
+@media (max-width: 700px) {
+  .about-practice-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-prose p {
+    font-size: 16px;
+  }
+}
